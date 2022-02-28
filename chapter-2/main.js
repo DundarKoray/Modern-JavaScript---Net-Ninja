@@ -23,3 +23,30 @@ console.log(points); // 100
     Multiple line
     comment
 */
+
+
+//Strings
+let email = "hulkthegreat@outlook.com";
+console.log(email); // hulkthegreat@outlook.com
+
+// string concatenation
+let firstName = "Brandon";
+let lastName = "Sanderson";
+let fullName = firstName + ' ' + lastName;
+
+console.log(fullName); // Brandon Sanderson
+
+// getting charecters
+console.log(firstName[0]); // B
+
+// string length
+console.log(firstName.length); // 7
+
+// string methods
+console.log(fullName.toUpperCase()); // BRANDON SANDERSON
+let result = fullName.toLowerCase();
+console.log(result); // brandon sanderson
+
+let index = email.indexOf('@');
+console.log(index); // 12
+
