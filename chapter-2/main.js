@@ -44,9 +44,29 @@ console.log(firstName.length); // 7
 
 // string methods
 console.log(fullName.toUpperCase()); // BRANDON SANDERSON
-let result = fullName.toLowerCase();
-console.log(result); // brandon sanderson
+let result1 = fullName.toLowerCase();
+console.log(result1); // brandon sanderson
 
 let index = email.indexOf('@');
 console.log(index); // 12
 
+//  COMMON STRING METHODS
+let yourEmail = "johnsmith@email.com";
+
+// lastindexOf()
+// let result = yourEmail.lastIndexOf("h");
+// console.log(result); // 8
+
+// slice()
+// let result = yourEmail.slice(0, 4);
+// console.log(result); //john
+
+// substr()
+// let result = yourEmail.substr(4, 5);
+// console.log(result); // smith
+
+// replace()
+// let result = yourEmail.replace("j", "k");
+// console.log(result); // kohnsmith@email.com
+// let result = yourEmail.replace("john", "eric");
+// console.log(result); // ericsmith@email.com
