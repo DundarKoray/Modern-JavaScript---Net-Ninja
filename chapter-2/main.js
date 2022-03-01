@@ -70,3 +70,20 @@ let yourEmail = "johnsmith@email.com";
 // console.log(result); // kohnsmith@email.com
 // let result = yourEmail.replace("john", "eric");
 // console.log(result); // ericsmith@email.com
+
+
+// NUMBERS
+let radius = 10;
+const pi = 3.14;
+
+console.log(radius, pi); // 10, 3.14
+console.log(radius / 2); // 5
+
+// math calculations: +, -, /, *, **, %
+
+// let result = pi * radius ** 2;
+// console.log(result); // 314
+
+// order operations BIDMAS B(brackets) I(**) D(devide) M(multiply) A(+) S(-)
+let result = 5 * (10 - 3) ** 2;
+console.log(result); //245
