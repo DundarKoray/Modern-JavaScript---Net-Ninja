@@ -85,5 +85,25 @@ console.log(radius / 2); // 5
 // console.log(result); // 314
 
 // order operations BIDMAS B(brackets) I(**) D(devide) M(multiply) A(+) S(-)
-let result = 5 * (10 - 3) ** 2;
-console.log(result); //245
+// let result = 5 * (10 - 3) ** 2;
+// console.log(result); //245
+
+
+let likes = 10;
+// let result = likes + 1;
+// console.log(result); // 11
+
+likes++;
+console.log(likes); // 11
+likes--;
+console.log(likes); // 10
+likes += 10; // same as this likes = 10 + 10;
+console.log(likes); // 20
+likes -= 5;
+console.log(likes); // 15
+likes *= 2;
+console.log(likes); // 30
+
+let blog = 'This blog has ' + likes + ' likes';
+console.log(blog);
+
