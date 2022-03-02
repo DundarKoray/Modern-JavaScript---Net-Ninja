@@ -104,6 +104,29 @@ console.log(likes); // 15
 likes *= 2;
 console.log(likes); // 30
 
-let blog = 'This blog has ' + likes + ' likes';
-console.log(blog);
+let blog = 'This blog has ' + likes + ' likes.';
+console.log(blog); // This blog has 30 likes.
 
+
+// TEMPLATE STRINGS
+
+// concetenation way
+let productName = 'OnePlus 9';
+let message_1 = 'You have won ' + productName + ' mobile phone!';
+console.log(message_1); // You have won OnePlus 9 mobile phone!
+
+// template string (literal) way  (back ticks ``)
+let message_2 = `You have won ${productName} mobile phone!`;
+console.log(message_2); // You have won OnePlus 9 mobile phone!
+
+// creating html templates
+let author = 'Mark'
+let book = 'Once upon a time'
+
+let html = `
+    <h2>${book}</h2>
+    <p>Written by ${author}</p>
+    <span>This blog has ${likes} likes.</span>
+`
+
+console.log(html);
