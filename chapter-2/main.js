@@ -154,3 +154,37 @@ newNinjas.push('Tommy');
 console.log(newNinjas);
 newNinjas.pop();
 console.log(newNinjas);
+
+
+// NULL AND UNDEFINED
+let ages;
+console.log(ages, ages + 3, `his new age is ${ages}`); // undefined NaN 'his new age is undefined
+ages = null;
+console.log(ages, ages + 3, `his new age is ${ages}`); // null 3 'his new age is null'
+
+
+// BOOLEAN false true
+let squads = ['Shaq', 'Harry', 'Fox', 'Bryant', 'Fisher'];
+console.log(squads.includes('Shaq')); //true
+console.log(squads.includes('Jordan')); //false
+
+function testingBoolean(array, name) {
+    if (array.includes(`${name}`)) {
+        console.log(`${name} is here`);
+    }
+    else {
+        console.log(`${name} is not here`);
+    }
+};
+
+testingBoolean(squads, 'Shaq'); // Shaq is here
+testingBoolean(squads, 'Jordan'); // Jordan is not here
+
+let shaqJerseyNumber = 34;
+console.log(shaqJerseyNumber == 34); // true
+console.log(shaqJerseyNumber == 12); // false
+console.log(shaqJerseyNumber != 12); // true
+console.log(shaqJerseyNumber > 30); // true
+console.log(shaqJerseyNumber > 40); // false
+console.log(shaqJerseyNumber >= 34); // true
+
