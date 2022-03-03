@@ -188,3 +188,11 @@ console.log(shaqJerseyNumber > 30); // true
 console.log(shaqJerseyNumber > 40); // false
 console.log(shaqJerseyNumber >= 34); // true
 
+// COMPERISON - LOOSE VS STRICT
+console.log(shaqJerseyNumber != 34); // false
+console.log(shaqJerseyNumber != '34'); // false
+console.log(shaqJerseyNumber === 34); // true
+console.log(shaqJerseyNumber === '34'); // false
+
+
+
