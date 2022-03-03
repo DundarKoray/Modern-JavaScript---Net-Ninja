@@ -130,3 +130,27 @@ let html = `
 `
 
 console.log(html);
+
+
+// ARRAYS
+let ninjas = ['Koray', 'Hari', 'Simon', 'Cherry'];
+console.log(ninjas);
+console.log(ninjas[0]);
+
+let randoms = ['Mark', 23, 22, 'Alex'];
+console.log(randoms);
+randoms[3] = "Georghe";
+console.log(randoms);
+
+// array props and methods
+console.log(randoms.length); // 4
+console.log(ninjas.join(',')); // Koray,Hari,Simon,Cherry
+console.log(ninjas.indexOf('Cherry')); // 3
+
+let newNinjas = ninjas.concat(['Anna', 'Emma']);
+console.log(newNinjas);
+newNinjas.push('Kubilay');
+newNinjas.push('Tommy');
+console.log(newNinjas);
+newNinjas.pop();
+console.log(newNinjas);
