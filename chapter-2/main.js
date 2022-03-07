@@ -194,5 +194,25 @@ console.log(shaqJerseyNumber != '34'); // false
 console.log(shaqJerseyNumber === 34); // true
 console.log(shaqJerseyNumber === '34'); // false
 
+// TYPE CONVERTING
+
+let number = '101';
+let result = number + 1
+console.log(result); // 1001 (number)
+result = Number(number) + 1;
+console.log(result); // 102 (number)
+console.log(typeof result); // number
+result = String(result);
+console.log(result, typeof result); // 102 string
+result = Boolean('Hello');
+console.log(result, typeof result); // true boolean
+result = Boolean(' ');
+console.log(result, typeof result); // true boolean
+result = Boolean(0);
+console.log(result, typeof result); // false boolean
+result = Boolean(10);
+console.log(result, typeof result); // true boolean
+result = Boolean(null);
+console.log(result, typeof result); // false boolean
 
 
