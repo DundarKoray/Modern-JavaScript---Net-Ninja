@@ -83,3 +83,31 @@ for (let i = 0; i < scores.length; i++) {
         break // this stops the loop after score is 100;
     }
 }
+
+
+// switch statament 
+let grade = 'D';
+
+switch (grade) {
+    case 'A':
+        console.log('You got an A!');
+        break;
+    case 'B':
+        console.log('You got an B!');
+        break;
+    case 'C':
+        console.log('You got an C!');
+        break;
+    case 'D':
+        console.log('You got an D!');
+        break;
+    case 'E':
+        console.log('You got an E!');
+        break;
+    case 'F':
+        console.log('You got an F!');
+        break;
+    default:
+        console.log('Not a valid grade');
+        break;
+}
