@@ -43,7 +43,7 @@ function lengthCheck(password) {
 
         console.log('Please create a password more than 5 characters');
     }
-    else if (password.length >= 12) {
+    else if (password.length >= 12 && password.includes('@')) {
         console.log('You have created SUPER STRONG password');
     }
     else {
@@ -55,10 +55,14 @@ lengthCheck('he'); // Please create a password more than 5 characters
 lengthCheck('hello'); // Please create a password more than 5 characters
 lengthCheck('merhabalar'); // You have succesfully created a password
 lengthCheck(123456); // You have succesfully created a password
-lengthCheck(1234567891011); // You have created SUPER STRONG password
+lengthCheck('1234567891011@'); // You have created SUPER STRONG password
 
 
+// if not
 
+let user = false;
 
-
+if (!user) {
+    console.log('hi');
+}
 
