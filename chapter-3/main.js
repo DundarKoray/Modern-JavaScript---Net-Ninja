@@ -66,3 +66,20 @@ if (!user) {
     console.log('hi');
 }
 
+// break continue 
+
+const scores = [29, 0, 100, 12, 55, 42]
+
+for (let i = 0; i < scores.length; i++) {
+
+    if (scores[i] === 0) {
+        continue; // it skips 0;
+    }
+
+    console.log(`your score: ${scores[i]}`);
+
+    if (scores[i] === 100) {
+        console.log('Congrats! You have got the top score!')
+        break // this stops the loop after score is 100;
+    }
+}
