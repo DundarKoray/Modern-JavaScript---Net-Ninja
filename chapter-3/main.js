@@ -84,7 +84,6 @@ for (let i = 0; i < scores.length; i++) {
     }
 }
 
-
 // switch statament 
 let grade = 'D';
 
@@ -111,3 +110,17 @@ switch (grade) {
         console.log('Not a valid grade');
         break;
 }
+
+// scobes
+
+let studentName = 'Koray';
+console.log(studentName); // Koray
+
+if (true) {
+    let studentName = 'Jari';
+    console.log(studentName); // Jari
+}
+
+console.log(studentName); // Koray
+
+
