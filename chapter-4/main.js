@@ -39,3 +39,37 @@ introduce('Koray Dündar', 'front-end developer');
 // Hello, I am Koray Dündar and I am a front - end developer.
 introduce();
 // Hello, I am Antti and I am a jobless.
+
+
+
+// ARROW FUNCTIONS 
+
+// convert regular functions to arrow functions
+
+// let greetings = function () {
+//     return "Hello world!";
+// }
+
+
+let greetings = () => "Hello world!";
+console.log(greetings());
+
+// const bill = function (productsFee, tax) {
+//     let total = 0;
+//     for (let i = 0; i < productsFee.length; i++) {
+//         total += productsFee[i] + productsFee[i] * tax;
+//     }
+//     return total;
+// }
+
+// console.log(bill([100, 200, 300, 400], 0.25));
+
+const bill = (productsFee, tax) => {
+    let total = 0;
+    for (let i = 0; i < productsFee.length; i++) {
+        total += productsFee[i] + productsFee[i] * tax;
+    }
+    return total;
+}
+
+console.log(bill([100, 200, 300, 400], 0.25));
