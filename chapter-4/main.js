@@ -73,3 +73,26 @@ const bill = (productsFee, tax) => {
 }
 
 console.log(bill([100, 200, 300, 400], 0.25));
+
+
+
+// methods and call backs
+
+let students = ['John', 'David', 'Ryan', 'Bob', 'Simon'];
+
+let studentGreet = (person, index) => {
+    console.log(index + ': Hello my name is ' + person + '.')
+}
+
+students.forEach(studentGreet);
+
+
+
+const ul = document.querySelector('.students');
+let html = '';
+
+students.forEach(student => {
+    html += `<li style="color:purple">${student}</li>`
+});
+
+ul.innerHTML = html;
