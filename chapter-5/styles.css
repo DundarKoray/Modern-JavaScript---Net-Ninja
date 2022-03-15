@@ -5,7 +5,8 @@
 }
 
 body {
-  
+  font-size: 18px;
+  font-family: ObjektivMk1,Helvetica,Arial,sans-serif;
 }
 
 .hero {
@@ -21,6 +22,10 @@ nav {
 
 main {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .logo {
@@ -37,42 +42,71 @@ h1,h2 {
 }
 
 h1 {
-
+    font-size: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 h2 {
+    font-size: 40px; 
     
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .flex-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .button {
     background-color: #C1E5F0;
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 150px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: .5rem;
+    margin-right: 1rem;
+    padding-bottom: 0.875rem;
+    padding-top: 0.875rem;
     text-align: center;
     text-transform: uppercase;
     color: #022640;
-    font-family: ObjektivMk1,Helvetica,Arial,sans-serif;
     border-radius: 0.5rem;
-}
-
-.button a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1rem;
+    letter-spacing: 2px;
 }
 
 
-z
+
+.button img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.feature {
+    display: flex;
+    color: rgba(255, 255, 255, 0.74);
+    padding: 1rem 1rem 1rem 0;
+    font-size: 25px;
+}
+
+.feature span {
+    color: white;
+    font-weight: bold;
+}
+
+.feature-image {
+    width: 25px;
+    margin-right: 10px;
+}
