@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: "DaltonMaag";
+  src: url("./assets/font/DaltonMaag.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "DaltonMaagBold";
+  src: url("./assets/font/DaltonMaagBold.ttf") format("truetype");
+}
+
 body {
   font-size: 18px;
   font-family: ObjektivMk1,Helvetica,Arial,sans-serif;
@@ -25,7 +35,19 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -36,53 +58,60 @@ main {
     width: 100%;
 }
 
-h1,h2 {
-    color: white;
-    font-family: ObjektivMk1,Helvetica,Arial,sans-serif;
+.title-banner {
+    text-align: center;
 }
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 1rem;
+h1,h2 {
+    color: white;
+    
+}
+
+h2 {
+    font-family: "DaltonMaag";
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-h2 {
-    font-size: 40px; 
-    
-    font-weight: 700;
+h1 {
+    font-size: 55px; 
     margin-bottom: 2rem;
+    font-family: "DaltonMaagBold";
 }
 
-.flex-wrapper {
+.buttons {
     display: flex;
+    justify-content: space-between;
 }
 
 .button {
+    font-family: "DaltonMaagBold";
     background-color: #C1E5F0;
-    width: 300px;
-    height: 150px;
+    width: 24%;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 1rem;
-    padding-bottom: 0.875rem;
-    padding-top: 0.875rem;
+    padding: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     color: #022640;
     border-radius: 0.5rem;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 
 }
 
+.buttons:not(:last-child){
+    margin-right: 0;
+}
+
 .button-text {
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1rem;
     letter-spacing: 2px;
 }
@@ -90,15 +119,21 @@ h2 {
 
 
 .button img {
-    width: 100px;
+    width: 80px;
     margin-bottom: 0.5rem;
+}
+
+.features {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .feature {
     display: flex;
     color: rgba(255, 255, 255, 0.74);
-    padding: 1rem 1rem 1rem 0;
-    font-size: 25px;
+    
+    /* font-size: 25px; */
 }
 
 .feature span {
@@ -109,4 +144,20 @@ h2 {
 .feature-image {
     width: 25px;
     margin-right: 10px;
+}
+
+.page-switch {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+.btn-wrapper {
+    max-width: 28rem;
+}
+
+.btn {
+    padding: 19px 35px 15px;
+    border-radius: 1.5rem;
 }
