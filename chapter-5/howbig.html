@@ -7,34 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <main class="hero">
-        <div class="container">
+    <main class="hero sub-page">
+        <div style="margin-bottom: auto;">
             <nav>
                 <div class="logo">
                     <img src="./assets/logo.svg" />
                 </div>
             </nav>
             <div class="progress-bar">
+                <div class="progress">
 
+                </div>
             </div>
-            <div class="title-banner">
-                <h1>How big is the appartment</h1>
-            </div>
-            <div class="measurement">
-
-            </div>
-            <div class="page-switch">
-                <a class="btn">BACK</a>
-                <a class="btn">NEXT</a>
-            </div>
-
         </div>
-
+            
+        <div class="measurement">
+            <div class="title-banner">
+                <h1>How big is the appartment?</h1>
+            </div>
+            <div class="measurement-logo">
+                <img src="assets/icons/size.svg" />
+            </div>
+            <span id="rangeValue">10</span>
+            <Input class="range" type="range" name "" value="10" min="10" max="200" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+        </div>
+            
+        <div class="page-switch">
+            <a class="btn">BACK</a>
+            <a class="btn btn-primary">NEXT</a>
+        </div>
     </main>
-
+    
 </body>
 
 </html>
