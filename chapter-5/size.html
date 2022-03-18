@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+
+<body>
+    <main class="hero sub-page size">
+        <div style="margin-bottom: auto;">
+            <nav>
+                <div class="logo">
+                    <img  src="./assets/logo.svg" />
+                </div>
+            </nav>
+            <div class="progress-bar">
+                <div class="progress">
+
+                </div>
+            </div>
+        </div>
+            
+        <div class="measurement">
+            <div class="title-banner">
+                <h1>How big is the appartment?</h1>
+            </div>
+            <div class="measurement-logo animate__animated animate__swing">
+                <img  src="assets/icons/size.svg" />
+            </div>
+            <span id="rangeValue">10</span>
+            <Input id="rangeInput" class="range" type="range" value="10" min="10" max="200" onChange="rangeSlide(this.value)" oninput="rangeValue2.value=rangeInput.value" onmousemove="rangeSlide(this.value)"></Input>
+            <Input type="number" oninput="rangeInput.value=rangeValue2.value, rangeSlide(this.value) " class="range2" id="rangeValue2" value="2" placeholder=""></Input>
+        </div>
+            
+        <div class="page-switch">
+            <div class="btn-wrapper">
+                <a class="btn" href="index.html"><img src="./assets/icons/back_arrow.svg" /></a>
+                <a class="btn btn-primary" href="rooms.html">NEXT</a>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

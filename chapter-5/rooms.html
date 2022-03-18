@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="main.js"></script>
 </head>
 
 <body>
-    <main class="hero sub-page">
+    <main class="hero sub-page rooms">
         <div style="margin-bottom: auto;">
             <nav>
                 <div class="logo">
@@ -27,18 +31,20 @@
             
         <div class="measurement">
             <div class="title-banner">
-                <h1>How big is the appartment?</h1>
+                <h1>How many rooms does it have?</h1>
             </div>
-            <div class="measurement-logo">
-                <img src="assets/icons/size.svg" />
+            <div class="measurement-logo animate__animated animate__swing">
+                <img src="assets/icons/rooms.svg" />
             </div>
-            <span id="rangeValue">10</span>
-            <Input class="range" type="range" name "" value="10" min="10" max="200" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+            <span id="rangeValue">1</span>
+            <Input class="range" type="range" name "" value="1" min="1" max="10" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
         </div>
             
         <div class="page-switch">
-            <a class="btn">BACK</a>
-            <a class="btn btn-primary">NEXT</a>
+            <div class="btn-wrapper">
+                <a class="btn" href="size.html"><img src="./assets/icons/back_arrow.svg" /></a>
+                <a class="btn btn-primary" href="rooms.html">NEXT</a>
+            </div>
         </div>
     </main>
     
