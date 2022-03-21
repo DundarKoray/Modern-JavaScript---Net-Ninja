@@ -113,10 +113,11 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .building:hover {
-    transform: translateY(-7px);
+    transform: translateY(-4px);
 }
 
 .buildings:not(:last-child){
@@ -198,6 +199,8 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     background: white;
+    color: #022640;
+
 }
 
 .btn:hover {
