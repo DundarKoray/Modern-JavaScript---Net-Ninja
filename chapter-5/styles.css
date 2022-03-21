@@ -16,7 +16,7 @@
 
 body {
   font-size: 18px;
-  font-family: ObjektivMk1,Helvetica,Arial,sans-serif;
+  font-family: "DaltonMaag";
 }
 
 .hero {
@@ -35,12 +35,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@media screen and (max-width: 480px) {
-    main{
-        padding: 15px;
-    }
 }
 
 .sub-page {
@@ -64,14 +58,6 @@ main {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-}
-
 .logo {
     width: 100px;
 }
@@ -89,12 +75,6 @@ main {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    .title-banner {
-        text-align: left;
-    }
-}
-
 h1,h2 {
     color: white;
     
@@ -107,23 +87,10 @@ h2 {
     letter-spacing: 3px;
 }
 
-@media screen and (max-width: 480px) {
-    h2 {
-        margin-bottom: 1rem; 
-
-    }
-}
 
 h1 {
     font-size: 55px; 
     font-family: "DaltonMaagBold";
-}
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 35px; 
-
-    }
 }
 
 .buildings {
@@ -146,23 +113,10 @@ h1 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 
-@media screen and (max-width: 480px) {
-    .building{
-        /* width: 49%; */
-        flex-direction: column;
-    }
-    
-    .buildings {
-        grid-template-rows: 2fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        
-    }
+.building:hover {
+    transform: translateY(-7px);
 }
 
 .buildings:not(:last-child){
@@ -175,8 +129,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-
-
 .building img {
     width: 80px;
     margin-bottom: 0.5rem;
@@ -188,23 +140,9 @@ h1 {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
-    .features {
-        flex-direction: column;
-    }
-}
-
 .feature {
     display: flex;
     color: rgba(255, 255, 255, 0.74);
-    
-    /* font-size: 25px; */
-}
-
-@media screen and (max-width: 480px) {
-    .feature {
-        font-size: 25px;
-    }
 }
 
 .feature span {
@@ -220,7 +158,6 @@ h1 {
 .page-switch {
     display: flex;
     justify-content: center;
-    background-color: white;
     padding: 1rem;
     margin-top: auto;
 }
@@ -251,20 +188,21 @@ h1 {
     display: flex;
     align-items: center;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
     letter-spacing: .125em;
     outline: 2px solid transparent;
     outline-offset: 2px;
     transition: all 0.3s ease;
     cursor: pointer;
     text-decoration: none;
+    background: white;
 }
 
 .btn:hover {
     transform: translateY(-7px);
-  }
+}
 
 .btn-primary {
     background-color: #C1E5F0;
@@ -283,12 +221,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (max-width: 480px) {
-    .measurement{
-        margin: 0;
-    }
 }
 
 .measurement-logo {
@@ -337,13 +269,6 @@ h1 {
     box-shadow: -407px 0 0 400px #C1E5F0;
 }
 
-@media screen and (max-width: 480px) {
-    .range{
-        width: 100%;
-    }
-}
-
-
 .size .progress {
     height: 5px;
     width: 20%;
@@ -369,12 +294,6 @@ h1 {
     border: none;
 }
 
-@media screen and (max-width: 480px) {
-    .range2{
-        width: 100%;
-    }
-}
-
 input[type='number'] {
     -moz-appearance:textfield;
 }
@@ -386,4 +305,76 @@ input::-webkit-inner-spin-building {
 
 input:focus {
     outline:none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    
+    main{
+        padding: 15px;
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .title-banner {
+        text-align: left;
+    }
+
+    h2 {
+        margin-bottom: 1rem; 
+
+    }
+
+    h1 {
+        font-size: 30px; 
+
+    }
+
+    .building{
+        /* width: 49%; */
+        flex-direction: column;
+    }
+    
+    .buildings {
+        grid-template-rows: 2fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        
+    }
+
+    .features {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .feature {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .measurement{
+        margin: 0;
+    }
+
+    .range{
+        width: 100%;
+    }
+
+    .range2{
+        width: 100%;
+    }
+
+    .page-switch {
+        padding: 0;
+    }
 }
