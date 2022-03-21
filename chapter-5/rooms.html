@@ -37,7 +37,8 @@
                 <img src="assets/icons/rooms.svg" />
             </div>
             <span id="rangeValue">1</span>
-            <Input class="range" type="range" name "" value="1" min="1" max="10" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+            <Input id="rangeInput" class="range" type="range" value="10" min="10" max="200" onChange="rangeSlide(this.value)" oninput="rangeValue2.value=rangeInput.value" onmousemove="rangeSlide(this.value)"></Input>
+            <Input type="number" oninput="rangeInput.value=rangeValue2.value, rangeSlide(this.value) " class="range2" id="rangeValue2" value="2" placeholder=""></Input>
         </div>
             
         <div class="page-switch">
